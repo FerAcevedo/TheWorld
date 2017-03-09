@@ -47,7 +47,7 @@ namespace TheWorldEF.Controllers.Api
             {
                 _logger.LogError($"Failed to get stops for thip {tripName}", ex);
                 Response.StatusCode = (int)HttpStatusCode.BadRequest;
-                return Json("Error ocurred finding trip name");
+                return Json("Error ocurred finding trip name, again");
             }
         }
 
